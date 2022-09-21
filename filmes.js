@@ -81,5 +81,9 @@ let catalogo = [
     }
   ];
 
+
+  // const catalagoJSON = JSON.stringify(catalogo);
+  // console.log(catalagoJSON);
+
   module.exports = catalogo;
   
