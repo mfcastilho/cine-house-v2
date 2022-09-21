@@ -80,4 +80,6 @@ let catalogo = [
       emCartaz: false
     }
   ];
+
+  module.exports = catalogo;
   
