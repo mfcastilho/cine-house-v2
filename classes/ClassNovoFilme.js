@@ -1,4 +1,5 @@
 
+//Classe
 class ClassNovoFilme{
   constructor(codigo, titulo, duracao, atores, lancamento, emCartaz){
     this.codigo = codigo;
@@ -10,4 +11,5 @@ class ClassNovoFilme{
   }
 }
 
+//exportando classe
 module.exports = ClassNovoFilme; 

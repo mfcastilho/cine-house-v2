@@ -3,6 +3,9 @@ let CLassNovoFilme = require("../classes/ClassNovoFilme.js");
 
 //importando catalogo.json
 let catalogo = require("../database/filmes.json");
+
+
+//Objeto funcoes
 let funcoes = {
 
   //Função que criar um novo filme
@@ -23,7 +26,6 @@ let funcoes = {
         console.log("-----MENU BUSCAR FILME-----");
       for(let filme of catalogo){
         if(filme.codigo == codigo){
-          //console.log(filme);
           return filme;
         }
       }
@@ -47,14 +49,9 @@ let funcoes = {
         console.table(catalogo);
     },
   
+    //Função listar os filmes de longa duração
       listarFilmesDeLongaDuracao: () =>{
         console.log("-----MENU LISTAR FILMES DE LONGA DURAÇÃO-----");
-      // for(let filme of catalogo){
-      //   if(filme.duracao >= 2){
-      //     console.log(filme);
-      //   }
-      // }
-    
       let filmesLongaDuracao = catalogo.filter(filme =>{
         return filme.duracao >= 2;
       })
